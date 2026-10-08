@@ -1,0 +1,14 @@
+Modality,Direct,Lifecycle
+Oil,800,900
+Coal,760,820
+Natural Gas,370,490
+Biomass,0,230
+Solar PV (Utility),0,48
+Solar PV (Rooftop),0,41
+Geothermal,0,38
+Concentrated Solar,0,27
+Hydropower,0,24
+Nuclear,0,12
+Wind (Offshore),0,12
+Wind (Onshore),0,11
+Battery Storage (adder only),0,25
