@@ -1,0 +1,79 @@
+:root {
+  color-scheme: light;
+  --page: #f9f9f7;
+  --surface: #fcfcfb;
+  --surface-raised: #ffffff;
+  --text-primary: #0b0b0b;
+  --text-secondary: #52514e;
+  --text-muted: #898781;
+  --gridline: #e1e0d9;
+  --baseline: #c3c2b7;
+  --border: rgb(11 11 11 / 0.1);
+  --hover-wash: rgb(11 11 11 / 0.05);
+  --link: #1c5cab;
+
+  /* One color per pie slice, in drawing order. The order is what keeps
+     neighbouring slices distinguishable with color-vision deficiencies,
+     including when solar or storage drops out. */
+  --color-gas: #4a3aa7;
+  --color-coal: #eb6834;
+  --color-nuclear: #1baf7a;
+  --color-hydro: #2a78d6;
+  --color-wind: #008300;
+  --color-solar: #eda100;
+  --color-storage: #e87ba4;
+  --color-smaller: #898781;
+
+  /* Hour picker: the selected hour in the accent, the rest as context. */
+  --accent: #2a78d6;
+  --bar-muted: #c3c2b7;
+  --bar-hover: #898781;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: dark;
+    --page: #0d0d0d;
+    --surface: #1a1a19;
+    --surface-raised: #222220;
+    --text-primary: #ffffff;
+    --text-secondary: #c3c2b7;
+    --text-muted: #898781;
+    --gridline: #2c2c2a;
+    --baseline: #383835;
+    --border: rgb(255 255 255 / 0.1);
+    --hover-wash: rgb(255 255 255 / 0.06);
+    --link: #86b6ef;
+
+    --color-gas: #9085e9;
+    --color-coal: #d95926;
+    --color-nuclear: #199e70;
+    --color-hydro: #3987e5;
+    --color-wind: #008300;
+    --color-solar: #c98500;
+    --color-storage: #d55181;
+    --color-smaller: #6d6c66;
+
+    --accent: #3987e5;
+    --bar-muted: #4a4a46;
+    --bar-hover: #6d6c66;
+  }
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--page);
+  color: var(--text-primary);
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: var(--link);
+}
